@@ -14,11 +14,12 @@ var generateBtn = document.querySelector("#generate");
 //initiates other functions and displays final password
 function writePassword() {
   var queries = promptUser();
-  var password = generatePassword(options);
-  var passwordText = document.querySelector("#password");
-  passwordText.value = password;
-
-}
+  if(queries) {
+    var password = generatePassword(options);
+    var passwordText = document.querySelector("#password");
+    passwordText.value = password;
+  }
+};
 // gathers desired information from user
 function promptUser() {
   lengthInput = parseInt(prompt("Enter your desired password length between 8 and 128 characters: "));
@@ -43,7 +44,7 @@ function promptUser() {
   if(confirm(
     "Do you want to include special characters?\nOk for Yes. Cancel for No."
    )); {options = options.concat(pSpecial)}
-  // console.log(options)
+   console.log(options);
 };
 
 // randomizes character options
@@ -53,7 +54,7 @@ function generatePassword() {
     var pChar= options[Math.floor(Math.random()*options.length)];
     passwordArray.push(pChar)
   }
-  // console.log(passwordArray);
+  console.log(passwordArray.join(""));
   return passwordArray.join("");
 };
 // Add event listener to generate button
