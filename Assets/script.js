@@ -26,6 +26,7 @@ function promptUser() {
     lengthInput = alert("Incorrect input. Please try again.");
     return false;
   };
+  if(lengthInput) {options = []} //resets any previous options data
 
   if (confirm(
     "Do you want to include upper case letters?\nOk for Yes. Cancel for No."
