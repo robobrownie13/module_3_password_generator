@@ -14,11 +14,9 @@ var generateBtn = document.querySelector("#generate");
 //initiates other functions and displays final password
 function writePassword() {
   var queries = promptUser();
-  if(queries) {
-    var password = generatePassword(options);
-    var passwordText = document.querySelector("#password");
-    passwordText.value = password;
-  }
+  var passwordText = document.querySelector("#password");
+  var password = generatePassword(options);
+  passwordText.value = password;
 };
 // gathers desired information from user
 function promptUser() {
