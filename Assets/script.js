@@ -35,13 +35,13 @@ function promptUser() {
     "Do you want to include lower case letters?\nOk for Yes. Cancel for No."
   )) {options = options.concat(pLower)};
 
-  if(confirm(
+  if (confirm(
     "Do you want to include numbers?\nOk for Yes. Cancel for No."
-  )); {options = options.concat(pNumerals)}
+  )) {options = options.concat(pNumerals)};
 
-  if(confirm(
+  if (confirm(
     "Do you want to include special characters?\nOk for Yes. Cancel for No."
-   )); {options = options.concat(pSpecial)}
+   )) {options = options.concat(pSpecial)};
    console.log(options);
 };
 
