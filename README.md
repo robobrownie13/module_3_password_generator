@@ -11,3 +11,7 @@ SO THAT I can create a strong password that provides greater security
 ## Mock-Up
 
 <img src="./Assets/03-javascript-homework-demo.png" alt="password generator layout">
+
+<br>
+
+Pages Link: https://robobrownie13.github.io/module_3_password_generator/

@@ -14,7 +14,7 @@ var generateBtn = document.querySelector("#generate");
 //initiates other functions and displays final password
 function writePassword() {
   promptUser();
-  if(!options.length)return;
+  if(!options.length)return; //if there's nothing passed into the options array, the function doesn't continue
     
   var passwordText = document.querySelector("#password");
   var password = generatePassword(options);
