@@ -29,20 +29,20 @@ function promptUser() {
 
   if (confirm(
     "Do you want to include upper case letters?\nOk for Yes. Cancel for No."
-  )) {options = options.concat(pUpper)};
+  )) {options = options.concat(pUpper)}
 
   if (confirm(
     "Do you want to include lower case letters?\nOk for Yes. Cancel for No."
-  )) {options = options.concat(pLower)};
+  )) {options = options.concat(pLower)}
 
   if (confirm(
     "Do you want to include numbers?\nOk for Yes. Cancel for No."
-  )) {options = options.concat(pNumerals)};
+  )) {options = options.concat(pNumerals)}
 
   if (confirm(
     "Do you want to include special characters?\nOk for Yes. Cancel for No."
-   )) {options = options.concat(pSpecial)};
-   console.log(options);
+   )) {options = options.concat(pSpecial)}
+  //  console.log(options);
 };
 
 // randomizes character options
